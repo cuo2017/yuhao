@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import '../App.css';
 
-import { Spring, Transition,  animated, config } from 'react-spring';
+import { Spring } from 'react-spring';
 import ichongclub from '../images/ichongclub.png';
 import wisepepper from '../images/wisepepper.png';
 
-import { Button,Divider,Card, Icon, Avatar,Timeline } from 'antd';
+import { Divider,Card, Icon, } from 'antd';
 import ScrollAnim from 'rc-scroll-anim';
 
 const ScrollParallax = ScrollAnim.Parallax;

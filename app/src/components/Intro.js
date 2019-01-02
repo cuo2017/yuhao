@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import '../App.css';
 
-import { Button,Divider,Card, Icon, Avatar,Timeline } from 'antd';
-import { Spring, Transition,  animated, config } from 'react-spring';
+import { Divider,Card, Avatar,Timeline } from 'antd';
+import { Spring, } from 'react-spring';
 
 import ScrollAnim from 'rc-scroll-anim';
 import avatar from '../images/avatar.png';

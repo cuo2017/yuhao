@@ -1,18 +1,12 @@
 import React, { Component } from 'react';
 import '../App.css';
-import { Spring, Transition,  animated, config } from 'react-spring';
+import { Spring } from 'react-spring';
 
 import background from '../images/background.png';
 import logo from '../images/logo3.png';
-import logo_black from '../images/logo3_black.png';
-import logo2_black from '../images/logo2_black.svg';
 import slogan from '../images/slogan.png';
 
-import { Button,Divider,Card, Icon, Avatar,Timeline } from 'antd';
 
-import ScrollAnim from 'rc-scroll-anim';
-
-const ScrollParallax = ScrollAnim.Parallax;
 
 export default class Title extends Component {
 	constructor(props){
@@ -31,7 +25,7 @@ export default class Title extends Component {
 				height:750,
 				cursor:'pointer'
 			}}>
-				<img src={background} style={{
+				<img alt="img not available" src={background} style={{
 					width:'100%',
 					height:'100%',
 					position:'absolute',
@@ -40,7 +34,7 @@ export default class Title extends Component {
 				}}/>
 
 
-				<img name="test1" src={slogan} style={{
+				<img alt="img not available" name="test1" src={slogan} style={{
 						width:500,
 						position:'relative',
 						marginTop:300,
@@ -61,7 +55,7 @@ export default class Title extends Component {
 				    }}
 				>
 				  {props => (
-				    <img src={logo} 
+				    <img alt="img not available" src={logo} 
 					onMouseEnter={this.toggle.bind(this)}
 		  			onMouseOut={this.toggle.bind(this)}
 					style={props}/>

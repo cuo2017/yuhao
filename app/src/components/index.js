@@ -3,7 +3,7 @@ import '../App.css';
 
 
 
-import { Button,Divider,Card, Icon, Avatar,Timeline } from 'antd';
+import { Divider, Icon } from 'antd';
 
 import Title from './Title';
 import Intro from './Intro';
@@ -13,7 +13,7 @@ import Parallax from 'react-springy-parallax';
 
 const COPYRIGHT = 'copyright ©2018 cuostudio.com'
 
-const Primary_Color = '#3d5397'
+// const Primary_Color = '#3d5397'
 
 
 export default class Application extends Component {

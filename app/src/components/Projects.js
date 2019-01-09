@@ -15,19 +15,19 @@ const INTRO_PROJECTS = "Here list projects I've been through.";
 const project_intro = {
 	ichongclub: {
 		name:'ichongclub',
-		duration: 'Sep,2015 ~ March,2016',
+		duration: 'Sep 2015 - March 2016',
 		intro:' An e-shop website which sold pet products... ',
 		src:ichongclub,
 	},
 	wp: {
 		name:'wisepepper',
-		duration: 'July,2017 ~ Current',
+		duration: 'July 2017 - Present',
 		intro:' An information management system designed for growing peppers.',
 		src:wisepepper,
 	},
 	inforest: {
 		name:'inforest',
-		duration: 'Dec,2018 ~ Current',
+		duration: 'Dec 2018 - Present',
 		intro:' A system which is designed for helping planting trees.',
 		src:ichongclub,
 	}

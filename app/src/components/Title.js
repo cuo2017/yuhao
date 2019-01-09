@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../App.css';
 import { Spring } from 'react-spring';
 
-import background from '../images/background.png';
+import background from '../images/background.jpg';
 import logo from '../images/logo3.png';
 import slogan from '../images/slogan.png';
 

@@ -14,14 +14,14 @@ const INTRO = "Welcome to Yuhao's personal website, a platform to display Yuhao'
 const { Meta } = Card;
 
 const timeline = {
-	a:'[2013-09-01] A undergraduate student majored in Internet of Things Engineering in UESTC',
-	b:'[2014-09-13] A member of Syslab Studio as a front-end web developer',
-	c:'[2015-2-17] The leader of Syslab Studio',
-	d:'[2015-5-12] One of the co-founders of Keyframes Ltd.',
-	e:'[2015-9-5] The leader of a three-persons team which developes ichongclub.com',
-	f:'[2017-6-29] The leader and the manager of the development team of the Wisepepper project',
-	g:'[2018-9-17] A graduate student majored in Project Management in Northeastern University',
-	h:'[2018-12-26] The leader and the manager of the development team of the Inforest project',
+	a:'[2013-09-01] Become a undergraduate student majored in Internet of Things Engineering in UESTC',
+	b:'[2014-09-13] Join the Syslab Studio as a front-end web developer',
+	c:'[2015-2-17] Be appointed as the leader of Syslab Studio',
+	d:'[2015-5-12] Co-found Key Frame Technology Co., Ltd.',
+	e:'[2015-9-5] Start to develope ichongclub.com',
+	f:'[2017-6-29] Join the Internet Security and Application Lab',
+	g:'[2018-9-17] Become a graduate student majored in Project Management in Northeastern University',
+	h:'[2018-12-26] Be invited into the Inforest project',
 
 }
 
@@ -90,7 +90,9 @@ export default class Intro extends Component{
 					paddingTop:0,
 					opacity: 0,
 				}}>
+
 					<Timeline pending="Continuing..." style={{ marginRight:150, width: 450,float:'right' }} mode="left">
+					    <h3 style={{textAlign:'left',color:'#666',marginBottom:20,}}>My Timeline</h3>
 					    <Item text={timeline.a}/>
 					    <Item text={timeline.b}/>
 					    <Item text={timeline.c}/>
@@ -180,6 +182,7 @@ class Window extends Component {
 				    <Divider />
 					    <div>
 					    	<p style={{color:'#aaa'}}>Age: <span style={{color:'#333'}}>23</span></p>
+					    	<p style={{color:'#aaa'}}>Email: <span style={{color:'#333'}}>isyuhao.cai@gmail.com</span></p>
 					    	<p style={{color:'#aaa'}}>Location: <span style={{color:'#333'}}>Seattle, Washington</span></p>
 					    	<p style={{color:'#aaa'}}>Hometown: <span style={{color:'#333'}}>Mianyang, Sichuan</span></p>
 					    	<p style={{color:'#aaa'}}>Status: <span style={{color:'#333'}}>Graduate Student</span></p>

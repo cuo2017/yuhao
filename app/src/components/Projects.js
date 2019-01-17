@@ -8,6 +8,7 @@ import wisepepper from '../images/wisepepper.png';
 import { Divider,Card, Icon, } from 'antd';
 import ScrollAnim from 'rc-scroll-anim';
 
+
 const ScrollParallax = ScrollAnim.Parallax;
 const { Meta } = Card;
 const INTRO_PROJECTS = "Here list projects I've been through.";
@@ -40,7 +41,7 @@ export default class Projects extends Component{
 	render(){
 		return(
 			// This is going to be display window with several dots as menu
-			<div style={{
+			<div id="products" style={{
 				position:'relative',
 				width:'100%',
 				paddingTop:150,
@@ -49,6 +50,7 @@ export default class Projects extends Component{
 				paddingRight:'15%',
 
 			}}>
+				
 				<ScrollParallax
 		          animation={{ opacity: 1 }}
 		          always={true}
@@ -62,25 +64,7 @@ export default class Projects extends Component{
 						fontWeight:'normal',
 						marginBottom:50,
 						width:'70%',
-					}}>PROJECTS</Divider>
-				</ScrollParallax>
-				<ScrollParallax
-		          animation={{ opacity: 1 }}
-		          always={true}
-		          style={{ 
-		          	width:'100%',
-					paddingTop:0,
-					opacity: 0,
-				}}>
-					<p style={{
-						width:'100%',
-						paddingTop:50,
-						color:'#666',
-						marginBottom:100,
-						textAlign:'center',
-						fontFamily:'Times New Roman',
-						fontSize:16
-					}}>{INTRO_PROJECTS}</p>
+					}}>PRODUCTS</Divider>
 				</ScrollParallax>
 
 				<div style={{
@@ -91,12 +75,14 @@ export default class Projects extends Component{
 				}}>
 
 					<ScrollParallax
-			          animation={{ opacity: 1 }}
+			          animation={{ opacity: 1,right:0 }}
 			          always={true}
 			          style={{ 
+			          	position:'relative',
 			          	width:'100%',
 						paddingTop:0,
 						opacity: 0,
+						right:200,
 					}}>
 						<Item item={project_intro.ichongclub}/>
 					</ScrollParallax>
@@ -111,12 +97,14 @@ export default class Projects extends Component{
 						<Item item={project_intro.wp}/>
 					</ScrollParallax>
 					<ScrollParallax
-			          animation={{ opacity: 1 }}
+			          animation={{ opacity: 1, left:0 }}
 			          always={true}
 			          style={{ 
+			          	position:'relative',
 			          	width:'100%',
 						paddingTop:0,
 						opacity: 0,
+						left:200,
 					}}>
 						<Item item={project_intro.inforest}/>
 					</ScrollParallax>

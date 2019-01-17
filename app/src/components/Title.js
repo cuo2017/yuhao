@@ -23,7 +23,8 @@ export default class Title extends Component {
 			<div style={{
 				position:'relative',
 				height:750,
-				cursor:'pointer'
+				cursor:'pointer',
+				zIndex:2
 			}}>
 				<img alt="img not available" src={background} style={{
 					width:'100%',

@@ -30,7 +30,7 @@ export default class Intro extends Component{
 
 
 		return(
-			<div style={{
+			<div id="intro" style={{
 				position:'relative',
 				paddingTop:150,
 				marginBottom:150,
@@ -39,7 +39,7 @@ export default class Intro extends Component{
 				height:700,
 			}}>
 				<ScrollParallax
-		          animation={{ opacity: 1 }}
+		          animation={{ opacity: 1}}
 		          always={true}
 		          style={{ 
 		          	width:'100%',
@@ -50,48 +50,36 @@ export default class Intro extends Component{
 						fontSize:35,
 						fontWeight:'normal',
 						marginBottom:50,
+						marginBottom:100,
+						color:'#000'
 					}}>INTRODUCTION</Divider>
 				</ScrollParallax>
-				<ScrollParallax
-		          animation={{ opacity: 1 }}
-		          always={true}
-		          style={{ 
-		          	width:'100%',
-					paddingTop:0,
-					opacity: 0,
-				}}>
-		          <p style={{ 
-		          	width:'100%',
-					paddingTop:0,
-					color:'#666',
-					marginBottom:100,
-					textAlign:'center',
-					fontFamily:'Times New Roman',
-					fontSize:16,
-					}}>{INTRO}</p>
-		        </ScrollParallax>
 
 		        <ScrollParallax
-		          animation={{ opacity: 1 }}
+		          animation={{ opacity: 1,right:0, }}
 		          always={true}
 		          style={{ 
+		          	position:'relative',
 		          	width:'100%',
 					paddingTop:0,
 					opacity: 0,
+					right:200,
 				}}>
 					<Window />
 				</ScrollParallax>
 
 				<ScrollParallax
-		          animation={{ opacity: 1 }}
+		          animation={{ opacity: 1,left:0 }}
 		          always={true}
 		          style={{ 
+		          	position:'relative',
 		          	width:'100%',
 					paddingTop:0,
 					opacity: 0,
+					left:200,
 				}}>
 
-					<Timeline pending="Continuing..." style={{ marginRight:150, width: 450,float:'right' }} mode="left">
+					<Timeline pending="Continuing..." style={{ marginRight:100, width: 450,float:'right' }} mode="left">
 					    <h3 style={{textAlign:'left',color:'#666',marginBottom:20,}}>My Timeline</h3>
 					    <Item text={timeline.a}/>
 					    <Item text={timeline.b}/>
@@ -161,7 +149,7 @@ class Window extends Component {
 		return(
 			<Spring
 				from={{
-					marginLeft:150, width: 300, cursor:'pointer', float:'left',
+					marginLeft:200, width: 300, cursor:'pointer', float:'left',
 					borderColor: '#ccc',
 				}}
 			    to={{
